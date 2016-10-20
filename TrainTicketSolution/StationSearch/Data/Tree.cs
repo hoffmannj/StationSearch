@@ -62,6 +62,7 @@ namespace StationSearch.Data
             return node
                 .Children
                 .Keys
+                .OrderBy(c => c)
                 .ToArray();
         }
 
