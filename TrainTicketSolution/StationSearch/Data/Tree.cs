@@ -27,8 +27,6 @@ namespace StationSearch.Data
             _root.SetIndices();
         }
 
-        #region Private functions
-
         public SearchResult Search(string value)
         {
             var node = GetLastNodeForValue(value);
@@ -40,6 +38,7 @@ namespace StationSearch.Data
         }
 
 
+        #region Private functions
 
         private SearchResult GetSearchResultFromNode(TreeNode node)
         {
